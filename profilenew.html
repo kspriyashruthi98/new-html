@@ -1,0 +1,157 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script>
+            function myfunction()
+            {
+var y = document.forms["f1"]["first_name"].value;
+                var z = document.forms["f1"]["last_name"].value;
+if ((y||z) == "") {
+window.alert("Name must be filled out");
+return false;
+}
+return true;
+var x;
+                x=document.getElementById("pn").value;
+                if(x.length!=10)
+                {
+                  alert("enter a valid no"); 
+                  return false; 
+                }
+else{
+                return true;
+                   
+}     
+       }
+       
+        </script>
+
+    <body>
+            <div class="header">
+
+   <div><button  type="submit"><a href="academic.html">Academic Details</a></button></div>
+               <div><button  type="submit"><a href="C:\Users\Shruthi\Desktop\resume\Final_Resume.doc">Resume</a></button></div>
+               <div><button  type="submit"><a href="contact.html">Contact</a></button></div>   
+
+
+
+                
+            </div>
+            <section>
+                <nav>
+                    <div class="centered">
+                        
+                        <img src="photo.jpg" alt="shanmuga priya"><br>
+                        <span>shanmugapriya Kalyanaraman,Intern@SKaaS</span>
+                        
+    
+              </div>
+              </nav>
+              <center> 
+                  <div class="page">
+              <form name="f1" onClick="return myfunction()" >
+                    <table width="450px">
+    
+                        <tr>
+                            
+                            <td><label for="first_name">First name</label></td>
+                            <td><input type="text"name="first_name" maxlength="50" size="30" pattern="[A-Za-z]{6}"   required></td>
+                        </tr>
+    
+                        <tr>
+                            <td><label for="last_name">Last name</label></td>
+                            <td><input type="text"name="last_name" maxlength="50" size="30"pattern="[A-Za-z]{5}" required></td>
+                        </tr>
+    <tr>
+            <td><label for="dob">Date_of_Birth</label></td>
+            <td><input type="date"name="dob" maxlength="50" size="30" required></td>
+    </tr>
+                        <tr>
+                            <td><label for="email">Email Id</label></td>
+                            <td><input type="email"name="email" maxlength="80" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone_no">Mobile Number</label></td>
+                            <td><input type="tel"name="phone_no" maxlength="10" size="30" id="pn"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Address</label></td>
+                            <td><textarea name="address" maxlength="1050" cols="40" rows="3"></textarea></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><label for="clg_name">College Name</label></td>
+                            <td><input type="text" name="clg_name" maxlength="50" required></td>
+                        </tr>
+                        <tr>
+                                <td>Branch</td>
+                                <td>
+                                <select name="branch">
+                                <option value=""></option>
+                                <option value="CIVIL">CIVIL</option>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="ice">ICE</option>
+                                <option value="it">IT</option>
+                                <option value="MECH">MECH</option>
+                                </select>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Sem</td>
+                                <td>
+                                <select name="sem">
+                                <option value=""></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                
+                                </select>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="cgpa">CGPA</label></td>
+                            <td><input type="number" name="cgpa" maxlength="10" size="30" ></td>
+                        
+                                </tr>
+                                
+                                
+                                <td><label for ="batch">Batch</label></td>
+                                <td>
+                                <select name="batch">
+                                <option value="15">2015-2019</option>
+                                <option value="16">2016-2020</option>
+                                <option value="17">2017-2021</option>
+                                <option value="18">2018-2022</option>
+                                
+                                </select>
+                                
+                                
+                                </td>
+                                </tr>
+                                
+                                
+                        <tr>
+                            <td colspan="2" style="text-align:left">
+                           <div> <input type="submit" value="submit"  ></div>
+                    </td>
+                        </tr>
+                    </table>
+                </form>
+                </div>
+    </center>
+              </section>     
+                <br>
+ </body>
+      </html>

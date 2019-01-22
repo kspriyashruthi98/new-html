@@ -1,0 +1,104 @@
+
+<html>
+    <head>  
+          <h2><marquee behaviour="scroll" direction="right"> Welcome To Our Login!!!!!</marquee></h2>
+        <style>
+            h2{
+                font-size:45px;
+                font-family:"Times New Roman", Times, serif;
+                color:#FF0099;
+                }
+                label {
+                    padding: 12px 12px 12px 0;
+                    display: inline-block;
+                    font-size:40px;
+                    font-style:oblique;
+                }
+                .col-25 {
+                    float: left;
+                    width: 25%;
+                    margin-top: 6px;
+                    
+                }
+                
+                .col-75 {
+                    float: left;
+                    width: 75%;
+                    margin-top: 6px;
+                    
+                }
+                input[type=submit] {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    float: left;
+                }
+                
+                input[type=submit]:hover {
+                    background-color: #45a049;
+                }
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                input[type=email] {
+                    width: 50%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    resize: vertical;
+                }
+                input[type=password] {
+                    width: 50%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    resize: vertical;
+                }
+                .col-25, .col-75 {
+                        width: 100%;
+                        margin-top: 0;
+                    }
+                
+                </style>
+                
+                
+                
+    </head>
+    <body>
+
+<form action='profile1.html' >
+<div class="row">
+      <div class="col-25">
+     
+
+<label>Enter your username/userid:</label>
+</div>
+<div class="col-75">
+<input type="email" name="user" class="form-control"  name="emailid" required>
+</div>
+</div>
+
+<div class="row">
+      <div class="col-25">
+ 
+<label>Enter your password:</label>
+</div>
+<div class="col-75">
+
+<input type="password" name="pwd" class="form-control" name="dob"  required>
+</div>
+</div>
+<br>
+<div class="row">
+<input type="submit" value="Submit">
+ </div>   
+</form>
+
+</div>
+</body>
+</html>
