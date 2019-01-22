@@ -28,6 +28,7 @@ text-align: center;
 background-color: lightcoral;
 color:black;
 font-size: 35px;
+overflow-x: hidden;
  }
   
   .centered {
@@ -53,13 +54,14 @@ font-size: 35px;
  .footer{
     padding-top: 2px;
     top:0;
-    height:10%;
+    height:20%;
   margin:0%;
     text-align:center;
     float: center;
-    background: violet;
-    color: white;
-    font-size: 35px;
+    background:black;
+    color:blue;
+    font-size:35px;
+    overflow-x: hidden;
  }
  button[type=button] {
     background-color: #4CAF50;
