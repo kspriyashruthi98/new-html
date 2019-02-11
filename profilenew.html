@@ -3,6 +3,67 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+            .contact {
+    
+    text-align:center;
+    background:blueviolet;
+    color: white;
+    font-size: 20px; 
+  padding:4px;
+  padding-top: 2px;
+  height:50%;
+  
+  overflow-x: hidden;
+  }
+  .header{
+    padding-top: 2px;
+    top:0;
+    height:50%;
+  margin:0%;
+    text-align: left;
+    background: violet;
+    color: white;
+    font-size: 35px;
+    overflow-x: hidden;
+ }
+
+ .cocurricular{
+    padding-top: 2px;
+    top:0;
+    height:50%;
+  margin:0%;
+    text-align:left;
+    
+    background:blue;
+    color: white;
+    font-size: 35px;
+    overflow-x: hidden;
+ }
+ table,th,td{
+     border: 2px solid black;
+     border-collapse: collapse;
+     padding:4px;
+     top:0;
+     font-family: ' serif';
+     font-size:18; 
+ }
+ .middle{
+    padding-top: 2px;
+    top:0;
+    height:50%;
+  margin:0%;
+    text-align: left;
+    background:brown;
+    color: white;
+    font-size: 35px;
+    overflow-y: hidden;
+ }
+ 
+  
+
+            </style>
+   
     </head>
     <script>
             function myfunction()
@@ -30,133 +91,111 @@ else{
         </script>
 
     <body>
-            <div class="header">
-                    <div><button  type="submit"><a href="">Logout</a></button></div>
-                    <div><button  type="submit"><a href="contact.html">See Contact Info</a></button></div>   
-   
-               <div><button  type="submit"><a href="Final_Resume.doc">See Resume</a></button></div>
-
-               <div><button  type="submit"><a href="academic.html">See Academic Details</a></button></div>
-
-
-                
-            </div>
+            
             <section>
                 <nav>
                     <div class="centered">
                         
                         <img src="photo.jpg" alt="shanmuga priya"><br>
-                        <span> shanmugapriya Kalyanaraman,Intern@SKaaS</span>
+                        <span> shanmugapriya Kalyanaraman</span>
                         
     
               </div>
               </nav>
-              <center> 
-                  <div class="page">
-              <form name="f1" onClick="return myfunction()" >
-                    <table width="450px">
-    
-                        <tr>
-                            
-                            <td><label for="first_name">First name</label></td>
-                            <td><input type="text"name="first_name" maxlength="50" size="30" pattern="[A-Za-z]{6}"   required></td>
-                        </tr>
-    
-                        <tr>
-                            <td><label for="last_name">Last name</label></td>
-                            <td><input type="text"name="last_name" maxlength="50" size="30"pattern="[A-Za-z]{5}" required></td>
-                        </tr>
+              
+              </section>  
+			  <div class="header">
+            <h5><strong>Qualification Details</strong></h5>
+            
+            
+<table style="width:70%">
     <tr>
-            <td><label for="dob">Date_of_Birth</label></td>
-            <td><input type="date"name="dob" maxlength="50" size="30" required></td>
+        <th>Qualification</th>
+        <th>Name of CollegeSchool</th>
+        <th>Year of Passing</th>
+        <th>Percentage Obtained</th>
     </tr>
-                        <tr>
-                            <td><label for="email">Email Id</label></td>
-                            <td><input type="email"name="email" maxlength="80" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="phone_no">Mobile Number</label></td>
-                            <td><input type="tel"name="phone_no" maxlength="10" size="30" id="pn"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="address">Address</label></td>
-                            <td><textarea name="address" maxlength="1050" cols="40" rows="3"></textarea></td>
-                            
-                        </tr>
-                        <tr>
-                            <td><label for="clg_name">College Name</label></td>
-                            <td><input type="text" name="clg_name" maxlength="50" required></td>
-                        </tr>
-                        <tr>
-                                <td>Branch</td>
-                                <td>
-                                <select name="branch">
-                                <option value=""></option>
-                                <option value="CIVIL">CIVIL</option>
-                                <option value="CSE">CSE</option>
-                                <option value="ECE">ECE</option>
-                                <option value="EEE">EEE</option>
-                                <option value="ice">ICE</option>
-                                <option value="it">IT</option>
-                                <option value="MECH">MECH</option>
-                                </select>
-                                </td>
-                                </tr>
-                                <tr>
-                                <td>Sem</td>
-                                <td>
-                                <select name="sem">
-                                <option value=""></option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                
-                                </select>
-                                </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="cgpa">CGPA</label></td>
-                            <td><input type="number" name="cgpa" maxlength="10" size="30" ></td>
-                        
-                                </tr>
-                                
-                                
-                                <td><label for ="batch">Batch</label></td>
-                                <td>
-                                <select name="batch">
-                                <option value="15">2015-2019</option>
-                                <option value="16">2016-2020</option>
-                                <option value="17">2017-2021</option>
-                                <option value="18">2018-2022</option>
-                                
-                                </select>
-                                
-                                
-                                </td>
-                                </tr>
-                                
-                                
-                        <tr>
-                            <td colspan="2" style="text-align:left">
-                           <div> <input type="submit" value="submit"  ></div>
-                    </td>
-                        </tr>
-                    </table>
-                </form>
-                </div>
-    </center>
-              </section>     
+    <tr>
+        <td>B.Tech</td>
+        <td>A.V.C College of Engineeering,Affliated to Anna University</td>
+        <td>2019</td>
+        <td>8.51(upto seventh sem)</td>
+    </tr>
+    <tr>
+        <td>HSC</td>
+        <td>Kalaimahal Matric Higher Sec.School</td>
+        <td>2015</td>
+        <td>96.5</td>
+    </tr>
+    <tr>
+            <td>SSLC</td>
+            <td>Kalaimahal Matric Higher Sec.School</td>
+            <td>2013</td>
+            <td>97.2</td>
+        </tr>
+    
+</table> 
+        </div>
+        
+        <div class="middle">
+            <h5>Extra-curricular Activities Detail </h5>
+            <table style="width:70%">
+                <tr>
+                    <th>Name of The Event</th>
+                    <th>Name of The College</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Badminton</td>
+                    <td>A.V.C Engg</td>
+                    <td>Runnner</td>
+
+                </tr>
+                <tr>
+                        <td>Science Fest</td>
+                        <td>A.V.C Engg</td>
+                        <td>-</td>
+    
+                    </tr>
+            </table>
+
+        </div>
+        <div class="cocurricular">
+            
+            <h5>Co-Curricular Activity Details</h5>
+            <table style="width:70%">
+                <tr>
+                    <th>Name of The Event</th>
+                    <th>Name of The College</th>
+                    <th>Name of topic</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                        <td>Paper Presentation</td>
+                        <td>M.R.K College of Engg</td>
+                        <td>EyeGaze Communication</td>
+                        <td>1</td>
+                    </tr>
+               
+                
+            </table>
+
+        </div> 
+			  <div class="contact" >
+    
+                    <address>
+                        k.shanmuga priya<br>
+                        Student at A.V.C<br>
+                        Mannamapnadal,Tamil Nadu<br>
+                        Email Id:kspriya.shruthi@gmail.com
+
+                            </address>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.0993430282624!2d79.7367471143136!3d11.10597359209841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5521d8be9e1e1b%3A0x6d265e8720b52dcc!2sSembanarkoil+Kezhamukkuttu+Bus+Stop!5e0!3m2!1sen!2sin!4v1547991159836" width="200" height="100" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+                </div>  
                 
                  <div class="footer">
                       <span> <i class="fa fa-linkedin-square" >linkedIn Id:Shanmugapriya Kalyanaraman</i></span>
+					  
                 </div>
  </body>
       </html>
